@@ -32,3 +32,22 @@ The codes for downstram tasks are in ./retinal code/step2_downstream_tasks, run 
 ### Part2: shape-guided segmentation  
 1) Set the experimental parameters in ./retinal code/step3_shape_guided_segmentation/args_setting.py
 2) cd to the path of ./retinal code/step3_shape_guided_segmentation. python step1_train_pd_mixup.py;python step2_train_with_shape_prior.py;python step3_test_segmentation.py.
+
+#Citation
+Please kindly cite this paper in your publications if it helps your research:
+```
+@inproceedings{chen2021unsupervised,
+  title={Unsupervised learning of local discriminative representation for medical images},
+  author={Chen, Huai and Li, Jieyu and Wang, Renzhen and Huang, Yijie and Meng, Fanrui and Meng, Deyu and Peng, Qing and Wang, Lisheng},
+  booktitle={International Conference on Information Processing in Medical Imaging},
+  pages={373--385},
+  year={2021},
+  organization={Springer}
+}
+@article{chen2021unsupervised,
+  title={Unsupervised Local Discrimination for Medical Images},
+  author={Chen, Huai and Wang, Renzhen and Li, Jieyu and Peng, Qing and Meng, Deyu and Wang, Lisheng},
+  journal={arXiv preprint arXiv:2108.09440},
+  year={2021}
+}
+```
