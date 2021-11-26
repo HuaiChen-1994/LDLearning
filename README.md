@@ -14,6 +14,7 @@ Based on these two facts, we systematacially propose a local discriminative repr
 <img src="./figures/shape-guided.jpg" width="400">  
 3. The ability of patch-wise discrimination inspires us to implement the learnt representation to one-shot localization. To realize this, we introduce center-sensitive ability into the framework to make the detected target center more accurate.  
 <img src="./figures/one-shot.jpg" width="400">  
+
 ## Usage
 
 -
