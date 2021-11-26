@@ -17,4 +17,14 @@ Based on these two facts, we systematacially propose a local discriminative repr
 
 ## Usage
 
-- Prerequisites:Python 
+- Prerequisites:xxx 
+- Clone this repo: git clone https://github.com/HuaiChen-1994/LDLearning.git.
+- Dataset preprocessing: total 14 open dataset should be downloaded and preprocessed. Please follow ./dataset/ReadMe.txt to finish this step.  
+
+### Part1: local discriminative representation learning  
+We only take the code of retinal images as an example, then, the implementation in X-ray is similar to this processing.  
+The code of this part is in ./retinal code/step1_ld_pretraining (or ./X-ray code/step1_ld_pretraining).  
+1) Set the experimental parameters in ./retinal code/step1_ld_pretraining/args_setting.py according to the detail explanations in this file (GPU id, batch-size, et.al.).  
+2) Patch discrimination learning to learn initial discriminative representations. cd to ./retinal code/step1_ld_pretraining/, then, python step1_train_pd_mixup.py.
+3) Local discrimination learning python step2_train_ld.py.
+
