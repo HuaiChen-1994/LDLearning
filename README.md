@@ -26,5 +26,9 @@ We only take the code of retinal images as an example, then, the implementation 
 The code of this part is in ./retinal code/step1_ld_pretraining (or ./X-ray code/step1_ld_pretraining).  
 1) Set the experimental parameters in ./retinal code/step1_ld_pretraining/args_setting.py according to the detail explanations in this file (GPU id, batch-size, et.al.).  
 2) Patch discrimination learning to learn initial discriminative representations. cd to ./retinal code/step1_ld_pretraining/, then, python step1_train_pd_mixup.py.
-3) Local discrimination learning python step2_train_ld.py.
+3) Local discrimination learning python step2_train_ld.py.  
+The codes for downstram tasks are in ./retinal code/step2_downstream_tasks, run STEP1_transfer.py and STEP2_random_initialization.py.  
 
+### Part2: shape-guided segmentation  
+1) Set the experimental parameters in ./retinal code/step3_shape_guided_segmentation/args_setting.py
+2) cd to the path of ./retinal code/step3_shape_guided_segmentation. python step1_train_pd_mixup.py;python step2_train_with_shape_prior.py;python step3_test_segmentation.py.
