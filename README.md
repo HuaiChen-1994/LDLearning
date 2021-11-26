@@ -2,7 +2,7 @@
 Pytorch code for Unsupervised Local Discrimination for Medical Images. [(arXiv)](https://arxiv.org/abs/2108.09440)  
 It is an extension of our previous work acceptted by [(IPMI 2021)](https://link.springer.com/chapter/10.1007/978-3-030-78191-0_29).
 
-# Highlights
+## Highlights
 The goal of this work is to learn local discriminative representation for medical images and explore its medical applications. Medical images commonly have the following two properties, 1) intra-modality structures similarity (i.e medical images of human contain similar anatomical structures), and 2) inter-modality shape similarity (i.e anatomical structures among different modalities may have similar shape knowledge).  
 
 <img src="./figures/similarity.jpg" width="400">  
@@ -14,3 +14,6 @@ Based on these two facts, we systematacially propose a local discriminative repr
 <img src="./figures/shape-guided.jpg" width="400">  
 3. The ability of patch-wise discrimination inspires us to implement the learnt representation to one-shot localization. To realize this, we introduce center-sensitive ability into the framework to make the detected target center more accurate.  
 <img src="./figures/one-shot.jpg" width="400">  
+## Usage
+
+-
