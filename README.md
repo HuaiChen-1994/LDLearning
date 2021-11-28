@@ -8,9 +8,9 @@ The goal of this work is to learn local discriminative representation for medica
 <img src="./figures/similarity.jpg" width="400">  
 Based on these two facts, we systematacially propose a local discriminative representation framework, which can measure pixel-wise, region-wise and patch-wise similarity for medical images. There are mainly three highlights:
 
-1. Based on the priori knowledge that medical images of human share similar anatomical structures, we propose a unsupervised deep learning framework to learn discriminative features and cluster similar regions. In this framework, two branch, including an embedding branch to embed each pixel and a clustering branch to cluster similar regions. In the embedding space, pixels of similar structures should be closely distributed. The learnt representation can be a good initialization for corresponding down-streams.  
+1. Based on the prior knowledge that medical images of human share similar anatomical structures, we propose an unsupervised deep learning framework to learn discriminative features and cluster similar regions. In this framework, two branches, including an embedding branch to embed each pixel and a clustering branch to cluster similar regions. In the embedding space, pixels of similar structures should be closely distributed. And the learnt representation can be a good initialization for corresponding down-streams.  
 <img src="./figures/ld.jpg" width="400">  
-2. Similar shape priors are shared among different medical images, and it is easy for specialists to identify target anatomical structures based on this prior knowledge. Based on this fact, we add priors to guide cluster branch to cluster specific regions. And we successfully utilize the shape prior of OCTA or OCTA to guide the segmentation of color fundus vessel.  
+2. Similar shape priors are shared among different medical images, and it is easy for specialists to identify target anatomical structures based on this prior knowledge. Based on this fact, we add priors to guide cluster branch to cluster specific structures. And we successfully utilize the shape prior of OCTA or OCTA to guide the segmentation of color fundus vessel.  
 <img src="./figures/shape-guided.jpg" width="400">  
 3. The ability of patch-wise discrimination inspires us to implement the learnt representation to one-shot localization. To realize this, we introduce center-sensitive ability into the framework to make the detected target center more accurate.  
 <img src="./figures/one-shot.jpg" width="400">  
@@ -27,7 +27,7 @@ The code of this part is in ./retinal code/step1_ld_pretraining (or ./X-ray code
 1) Set the experimental parameters in ./retinal code/step1_ld_pretraining/args_setting.py according to the detail explanations in this file (GPU id, batch-size, et.al.).  
 2) Patch discrimination learning to learn initial discriminative representations. cd to ./retinal code/step1_ld_pretraining/, then, python step1_train_pd_mixup.py.
 3) Local discrimination learning python step2_train_ld.py.  
-The codes for downstram tasks are in ./retinal code/step2_downstream_tasks, run STEP1_transfer.py and STEP2_random_initialization.py.  
+The codes for downstream tasks are in ./retinal code/step2_downstream_tasks, run STEP1_transfer.py and STEP2_random_initialization.py.  
 
 ### Part2: shape-guided segmentation  
 1) Set the experimental parameters in ./retinal code/step3_shape_guided_segmentation/args_setting.py
