@@ -17,7 +17,7 @@ Based on these two facts, we systematacially propose a local discriminative repr
 
 ## Usage
 
-- Prerequisites:xxx 
+- Implement environment: 4xGTX1080, Ubuntu 18.04LTS, pytorch 1.8.0, Cuda 10.2  
 - Clone this repo: git clone https://github.com/HuaiChen-1994/LDLearning.git.
 - Dataset preprocessing: total 14 open dataset should be downloaded and preprocessed. Please follow ./dataset/ReadMe.txt to finish this step.  
 
