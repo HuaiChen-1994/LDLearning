@@ -31,7 +31,7 @@ The codes for downstram tasks are in ./retinal code/step2_downstream_tasks, run 
 
 ### Part2: shape-guided segmentation  
 1) Set the experimental parameters in ./retinal code/step3_shape_guided_segmentation/args_setting.py
-2) cd to the path of ./retinal code/step3_shape_guided_segmentation. python step1_train_pd_mixup.py;python step2_train_with_shape_prior.py;python step3_test_segmentation.py.
+2) cd to the path of ./retinal code/step3_shape_guided_segmentation. python step1_train_pd_mixup.py;python step2_train_with_shape_prior.py;python step3_test_segmentation.py.  
 
 #Citation  
 Please kindly cite this paper in your publications if it helps your research:
