@@ -387,7 +387,7 @@ if __name__=='__main__':
         #=====================================
         mean=[0.485, 0.456, 0.406]
         std=[0.229, 0.224, 0.225]
-        for choosen_index in range(len(ori_attention_map[:1])):
+        for choosen_index in range(len(ori_attention_map[:,:1])):
             temp_input=inputs[choosen_index].data.cpu().numpy()
             temp_attention=ori_attention_map[choosen_index].data.cpu().numpy()
             temp_input=np.asarray([temp_input[2],temp_input[1],temp_input[0]])
